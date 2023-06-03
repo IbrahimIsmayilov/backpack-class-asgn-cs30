@@ -35,7 +35,6 @@ class Backpack:
             print(f"The {item} was added to the backpack.")
     
     # If the backpack is open and the item argument is in the backpack, take out the item argument from the backpack
-
     def takeout(self, item):
         search_result = linearSearch(self.items, item)
         if self.open == True and search_result != -1:
@@ -56,5 +55,7 @@ small_blue_backpack.putin("jacket")
 small_blue_backpack.closeBag()
 small_blue_backpack.openBag()
 small_blue_backpack.takeout("jacket")
+small_blue_backpack.closeBag()
+
 
 
